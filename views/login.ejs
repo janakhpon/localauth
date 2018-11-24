@@ -1,0 +1,29 @@
+<div class="col-sm-6 col-sm-offset-3">
+		
+		<% if(message.length > 0) { %>
+			<div class='alert alert-danger'><%= message %></div>
+		<% } %>
+
+    <h1>Login</h1>
+
+    <form action="/login" method="post">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-info btn-lg">Login</button>
+    </form>
+
+    <hr>
+
+    <!-- <h2>Or Login With <a href="/auth/facebook" class="btn btn-primary btn-lg">Facebook</a></h2> -->
+
+    <p>Or, <a href="/signup">Signup</a></p>
+    <p>Go back <a href="/">home</a>.</p>
+
+</div>

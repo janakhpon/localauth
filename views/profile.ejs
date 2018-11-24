@@ -1,0 +1,23 @@
+<div class="page-header">
+
+    <h1><%= user.name %></h1>
+
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+
+</div>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <div class="well">
+
+            <h3>Locally Stored User</h3>
+
+            <p>
+                <strong>Name</strong>: <%= user.name %><br>
+                <strong>id</strong>: <%= user._id %><br>
+                <strong>email</strong>: <%= user.email %><br>
+                <strong>password</strong>: <%= user.password %>
+            </p>
+                
+        </div>
+    </div>
+</div>
